@@ -1,0 +1,12 @@
+from pynput. import Controller
+import time
+
+mouse = Controller()
+
+def auto_clicker():
+    while True:
+        mouse.click(button='left')
+        time.sleep(0.1)
+
+if __name__ == "__main__":
+    auto_clicker()
